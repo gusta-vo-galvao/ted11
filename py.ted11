@@ -1,0 +1,29 @@
+import random
+import numpy as np
+
+matriz= []
+soma = []   
+print("#"*100)
+print("MATRIZ 10X10 Z :")
+print("#"*100)
+for x in range(1, 11):
+    lista_auxiliar = []
+    for y in range(1, 11):
+        lista_auxiliar.append(random.randint(1, 100))
+    matriz.append(lista_auxiliar)
+    print(lista_auxiliar)
+soma.append(matriz)
+print("#"*100)
+print("Soma dos indices da matriz : ")
+print(np.sum(soma))
+
+print("#"*100)
+matrizG = np.array(matriz)
+soma = matrizG* 3
+print("A mutiplicação dos numeros da matriz Z")
+print("Resulta na matriz G:")
+print("#"*100)
+print(soma)
+print("#"*100)
+print("Fim")
+print("#"*100)
